@@ -1,0 +1,38 @@
+@charset "UTF-8";
+div#table{
+	border-collapse: separate;
+	border: 10px ridge rgb(128,8,8);
+	background-color: rgb(250,210,10);
+	margin: 30px auto 30px auto;
+	box-shadow: 10px 5px 5px rgba(11,17,125,0.5);
+}
+caption{
+	border: 5px ridge rgb(11, 17,125);
+	background-color: rgb(250,210,10);
+	padding: 10px 0 10px 0;
+	font-size: 2em;
+}
+thead th{
+	border: 5px ridge rgb(11,17,125);
+	margin: 10px;
+	width: 800px;
+	height: 50px;
+	color: rgb(250,210,10);
+	background-color: rgb(11,17,125);
+}
+tbody th{
+	border: 5px ridge rgb(11,17,125);
+	margin: 10px;
+	width: 800px;
+	height: 50px;
+	color: rgb(250,210,10);
+	background-color: rgb(128,8,8);
+}
+td{
+	border: 5px ridge rgb(11,17,125);
+	margin: 10px;
+	width: 800px;
+	height: 50px;
+	text-align: center;
+	background-color: white;
+}

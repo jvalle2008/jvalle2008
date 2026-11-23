@@ -1,0 +1,42 @@
+@charset "UTF-8";
+nav.horizontal {
+   min-height: 2em;
+}
+
+nav.horizontal li {
+   display: block;
+   width: 200px;
+   line-height: 2em;
+   text-transform: uppercase;
+   text-align: left;
+}
+
+nav.horizontal a {
+   display: block;
+   font-size: 1em;
+}
+
+nav.horizontal a:hover, nav.horizontal a:active {
+   color: rgb(250, 10, 10);
+}
+
+ul.mainmenu {
+   display: block;
+}
+
+ul.mainmenu > li {
+   text-indent: 15px;
+   background-color: #FFFFCC;
+   border: 10px ridge rgb(250,210,10);
+}
+ul.mainmenu > li:first-of-type a {
+   color: rgb(11,17,125);
+   font-size: 2em;
+}
+ul.submenu {
+   width: 100%;
+   display: none;
+}
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+	display: block;
+}

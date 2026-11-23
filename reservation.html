@@ -1,0 +1,116 @@
+<!DOCTYPE html> <!--start of website-->
+<html lang="en">
+<head> <!--tab info-->
+<title>Castle Respite - Reservation</title> <!--website name-->
+<meta charset="utf-8">
+<link href="styles/styles1.css" rel="stylesheet"> <!--links stylesheet-->
+<link href="styles/layout.css" rel="stylesheet">
+<link href="styles/form.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<meta name="description" content="web form used to reserve your vacation and provide the details for your package">
+</head>
+<body> <!--all content inside website-->
+<div id="wrapper"> <!--creates section within body that holds main-->
+  <header>
+      <h1><img src="images/logo.png" alt="Logo">Castle Respite</h1> <!--Name of the fortified paradise-->
+  </header>
+ <nav class="horizontal">
+         <ul class="mainmenu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#" class="submenuTitle">Dining Room &#9654;</a>
+               <ul class="submenu">
+                  <li><a href="rooms/great_hall.html">Great Hall</a></li>
+                  <li><a href="rooms/cellar.html">Cellar</a></li>
+                  <li><a href="rooms/pantry.html">Pantry</a></li>
+               </ul>
+            </li>
+            <li><a href="#" class="submenuTitle">Bedrooms and Bathroom &#9654;</a>
+               <ul class="submenu">
+                  <li><a href="rooms/master_bedroom.html">Master<br>Bedroom</a></li>
+                  <li><a href="rooms/servants'_quarters.html">Servants'<br> Quarters</a></li>
+                  <li><a href="rooms/stables.html">Stables</a></li>    
+				  <li><a href="rooms/privy.html">Privy</a></li>
+               </ul>
+            </li>
+            <li><a href="#" class="submenuTitle">Things To Do &#9654;</a>
+               <ul class="submenu">
+                  <li><a href="events/museums.html">Museums</a></li>
+                  <li><a href="events/restaurants.html">Restaurants</a></li>
+                  <li><a href="events/entertainment.html">Entertainment</a></li>
+               </ul>
+            </li>
+			<li><a href="#" class="submenuTitle">Planning and Payment &#9654;</a>
+				<ul class="submenu">
+					<li><a href="packages.html">Packages</a></li>
+					<li><a href="reservation.html">Reservations</a></li>
+				</ul>
+			</li>
+            <li><a href="contact.html">Contact Us</a> </li>
+         </ul>
+      </nav>
+  <main> <!--content inside #wrapper-->
+  <h2 id="headerFirst">Reserve your spot!</h2>
+  <form id="custName" method="post">
+	<fieldset id="custInfo">
+		<div class="formRow">
+			<label for="name">Name</label>
+			<input name="custName" id="name" type="text" placeholder="Your Name Here" required>
+		</div>
+		<div class="formRow">
+			<label for="email">Email Address</label>
+			<input name="custEmail" id="email" type="email" placeholder="youremail@email.com" required>
+		</div>
+		<div class="formRow">
+			<label for="phone">Phone Number</label>
+			<input name="custPhone" id="phone" type="tel" placeholder="(123)456-7890"
+				pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required>
+		</div>
+		<div class="formRow">
+			<label for="mail">I give permission to be contacted via email</label>
+			<input name="custMail" id="mail" type="checkbox">
+		</div>
+		<div class="formRow">
+			<label for="call">I give permission to be contacted via call and/or text</label>
+			<input name="custCall" id="call" type="checkbox">
+		</div>
+	</fieldset>
+	<fieldset id="custTransaction">
+		<div class="formRow">
+			<label for="pay">How are you planning to pay?</label>
+			<select name="custPayment" id="pay">
+				<option id="default" value="1">Choose your payment method</option>
+				<option id="paypal" value="2">PayPal</option>
+				<option id="venmo" value="3">Venmo</option>
+			</select>
+		</div>
+		<div class="formRow">
+			<label for="amount">How many people in your group?</label>
+			<input name="custAmount" id="amount" type="number" value="5" min="1" max="25" required>
+		</div>
+		<div class="formRow">
+			<label>How long are you planning to stay?</label>
+			<label for="from">From</label>
+			<input name="custDays" id="from" type="date" required>
+			<label for="to">To</label>
+			<input name="custDays" id="to" type="date" required>
+		</div>
+	</fieldset>
+	<fieldset id="custRequests">
+		<div class="formRow">
+			<label for="request">Do you have any special requests? (small: +$50, large: +$100)</label>
+			<textarea name="custText" id="request" placeholder="Placing specific food or drinks in the pantry or cellar(small), or even decorating the castle to match a birthday party or thanksgiving(large)"></textarea>
+		</div>
+	</fieldset>
+	<div id="buttons">
+		<input type="submit" value="Reserve">
+	</div>
+   </form>
+	
+  </main>
+  <footer> <!--bottom note-->
+  Copyright &copy; 2026 WebMaster <!--creates copyright symbol-->
+  <a href="mailto:j0516244@amarillocollege.com">Jacob Valle</a> <!--links email address-->
+  </footer>
+</div>
+</body>
+</html> <!--end of website-->

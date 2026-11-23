@@ -1,0 +1,176 @@
+@charset "UTF-8";
+header, nav, main, footer { display: block;} /*displays elements as block*/
+body { background-image: url(../images/background.jpg); /*showcases castles in background with blurred effect*/
+	   backdrop-filter: blur(1px); /*adds filter to background-image*/
+	   background-size: cover; /*adjusts size of background-image*/
+       font-family: "Garamond"; /*changes text font*/
+}
+#wrapper { max-width: 1080px; /*adjusts width*/
+		   min-width: 860px;
+           margin: auto; /*adjusts margin placement*/
+		   background-color: rgb(128,8,8); /*changes background color*/
+		   color: rgb(11,17,125); /*changes text color*/
+		   box-shadow: 5px 5px 5px #000000; /*adds shadow to box*/
+}
+h1 { display: flex; /*displays h1 as flex*/
+	 justify-content: center; /*centers the content of h1*/
+	 align-items: center; /*aligns the content of h1*/
+	 text-align: center; /*centers the text of h1*/
+     background-color: rgb(250,210,10); /*sets background color of h1*/
+	 height: 110px; 
+	 font-family: serif;
+	 font-size: 4.5em; /*changes height, font, and size of text*/
+	 padding-top: 20px; /*adjusts position of text*/
+	 text-shadow: 3px 3px 3px #90745D; /*applies shadow to text*/
+	 margin-bottom: 0; /*connects header to main*/
+}
+h2#headerFirst{ display: flex;
+	 justify-content: center; /*centers the content of h2*/
+	 align-items: center; /*aligns the content of h2*/
+	 order: 1; /*sets the order of h2*/
+	 text-align: center;
+	 font-size: 2em; 
+	 font-family: "Papyrus";
+	 font-style: italic; /*changes the font size, style, and family*/
+}
+h2#headerSecond{ display: flex;
+	 justify-content: center; /*centers the content of h2*/
+	 align-items: center; /*aligns the content of h2*/
+	 order: 3; /*sets the order of h2*/
+	 text-align: center;
+	 font-size: 2em; 
+	 font-family: "Papyrus";
+	 font-style: italic; /*changes the font size, style, and family*/
+}
+main ul{
+	list-style-type: square; /*keeps the list without a style*/
+	display: block;
+	order: 3; /*sets the order of ul*/
+}
+main ul li{
+	padding: 0px 10px 0px 0px; /*sets the padding for the list items*/
+}
+h3 {display: flex; /*displays h3 as flex*/
+	 justify-content: center; /*centers the content of h3*/
+	 align-items: center; /*aligns the content of h3*/
+	 order: 6; /*sets the order of h3*/
+	 font-size: 2em; 
+	 font-family: "Papyrus"; /*changes the font size and family*/
+	text-align: center; 
+} /*brings heading 3 to center*/
+
+nav { display: flex;
+	  flex-flow: column wrap; /*displays nav as flex and adjusts the flow of the content*/
+	  order: 3;
+	  float: left;
+      width: 200px; 
+	  text-align: left;
+}
+nav ul { list-style-type: none; /*keeps the list without a style*/
+       padding-left: 20px;
+	 }
+nav li { padding-bottom: 5px;
+         font-weight: bold; /*changes font to bold*/
+}
+nav a { text-decoration: none; }/*adds no decoration to links*/
+nav a:link { color: rgb(255, 0, 0); }/*sets all links to yellow*/
+nav a:visited{ color: black; }/*sets all visSited links to black*/
+
+main { 	  display: flex; /*displays main as flex*/
+		  flex-flow: column wrap; /*adjusts the flow of the content*/
+		  order: 2;
+		  justify-content: center; /*centers the content of main*/
+		  align-items: center;
+		  background-color: #FFFFCC;/*sets color of main article*/
+          margin-left: 260px;/*adjusts margin, padding, and the minimum height for the article box*/
+          padding: 5px 25px;
+		  min-height: 800px;
+}
+header img { float: left;/*tells the image to float within the box*/
+			 width: 100px;/*adjusts width, height, and padding of image*/
+			 height: 100px;
+			 padding-right: 10px;
+}
+main img { display: flex;/*displays the image as flex*/
+		   order: 2;
+		   float: right;/*tells image to float right in the box*/
+		   width: 500px;/*adjusts width, height, margin, and padding of image*/
+		   height: 370px;
+		   margin-top: 20px;
+		   border: 14px rgb(250,210,10) ridge;/*gives the image an yellow double outline 14px thick*/
+		   box-shadow: 10px 5px 5px rgba(11,17,125,0.5);
+}
+img#contact{
+		   display: block;
+		   order: 5;
+		   max-width: 600px;
+		   min-width: 300px;
+		   height: auto;
+}
+p {  display: flex; /*displays the paragraphs as flex*/
+	justify-content: center; /*centers the content of the paragraphs*/
+	align-items: center; /*aligns the content of the paragraphs*/
+	order: 4;
+	 padding: 0px 10px 0px 10px; } /*sets the padding for the paragraphs*/
+p.review{
+	display: flex;
+	text-align: center; /*centers the content of the paragraphs*/
+	order: 7;
+}
+article{ 
+		display: flex; /*displays the article as flex*/
+		flex-flow: row wrap;
+		justify-content: center; /*centers the content of the article*/
+		align-items: center; /*aligns the content of the article*/
+		order: 2;
+		padding: 10px 10px 0px 10px; /*sets the padding for the articles*/
+}
+article:first-of-type:first-letter { 
+	font-size: 4em; /*sets the font size and font family of the first letter in the first paragraph*/
+	font-family: bold, "Times New Roman";
+}
+
+footer { background-color: rgb(250,210,10); /*sets color of the footer*/
+       margin: auto; /*adjusts margin, padding, font size, and font style*/
+       padding: 20px;
+       text-align: center;/*centers the footer text*/
+	   font-size: small;
+	   font-style: italic;
+}
+@media screen and (max-width: 768px) {
+	div#wrapper{
+		box-shadow: none;
+		padding-right: 10px;
+		border: none;
+		width: 100vw;
+	}
+	main{margin: 0px;
+		padding-left: 250px; /*adjusts the padding of main when screen is less than 768px*/
+	}
+	main img{
+		width: 80%; /*adjusts the width of the image in main when screen is less than 768px*/
+		height: 80%;
+	}
+	h2#headerFirst{
+		font-size: 4em;
+	}
+	h2#headerSecond{
+		font-size: 2.5em;
+	}
+	p, article{
+		font-size: 1.2em;
+	}
+	nav{
+		width: 0px;
+		justify-content: center; /*centers the content of nav*/
+		align-items: center; /*aligns the content of nav*/
+		order: 0;
+	}
+	nav.horizontal ul{
+	flex-flow: row wrap;
+	}
+	body{
+		background-image: none;
+		background-color: rgb(128,8,8);
+	}
+}

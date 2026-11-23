@@ -1,0 +1,38 @@
+@charset "UTF-8";
+div#list{
+	display: block;
+	order: 5;
+	border: 10px ridge rgb(128,8,8);
+	background-color: rgb(250,210,10);
+	margin: 30px auto 30px auto;
+	box-shadow: 10px 5px 5px rgba(11,17,125,0.5);
+}
+figure{
+	padding-left: 20px;
+	border: 10px rgb(11,17,125) ridge;
+	background-color: white;
+}
+figure img{
+	display: block;
+	padding-bottom: 25px;
+	width: 200px;
+	height: 130px;
+	border: none;
+	rotate: 5deg;
+}
+figure figcaption{
+	background-color: white;
+	padding: 10px;
+	text-align: center;
+}
+figcaption a{
+	font-size: 2em;
+	font-family: Garamond;
+	color: red;
+}
+@media screen and (max-width: 768px){
+	figure img{
+		width: 40%;
+		height: 40%;
+	}
+}
